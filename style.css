@@ -1,30 +1,136 @@
-body {margin: 20px 350px 0px 350px
+body{margin: 0px;padding: 0px;
+	background:#F8F8FF;
+	height: 100vh;
+}
+  
+  
+/*Le menu de Navigation*/
+
+.nav ul{list-style: none;
+	background:rgb(34, 178, 82);
+	text-align: center;
+	padding: 0px;
+	margin:0px;
+height: 50px;
+}
+.nav{
+	display: fixed;	
+}
+	
+
+	.nav li{display: inline-block;
+	padding-top: 10px;}
+	.nav a{text-decoration: none;
+		color: #fff;
+		width: 100%;
+		display: block;
+		padding: 11px;
+		font-size: 17px;
+		font-family: helvetica;
+		font-weight: bold;		
+	}
+	.nav a:hover {background:silver;
+		transition: 0.6s;text-transform: uppercase;
+	
+	}
+
+	/*Le menu de gauche*/
+	ul span{color: rgb(169, 190, 50);
+	font-size:17px;
+	font-weight: bold;
+	font-family: helvetica;
+	}
+
+.navbar ul{list-style: none;
+	background:#B22222;
+	text-align: center;
+	padding: 0px;
+	margin:0px;
+	margin-top: 10px;
+width: 200px;
 }
 
-h1,h2,h3,h4{ color: green;
-	         font-size: 30px;
-	         font-family: sans-serif;
-	         text-align: center;
-	         
-}
-.menu{text-align: center;
-}
-.menu li{list-style-type: none;
-	     display: inline-block;
-	     text-align: center;
-         background-color: gray;
-         padding: 15px;
-}
-li a {color: white;
-	  text-decoration: none;
-	  font-weight: bold;
-	  padding: 15px;
-}
+	.navbar li{display: block;
+	width: 200px;
+	text-align: left;
+	}
+	.navbar a{text-decoration: none;
+		color: #fff;
+		width: 100%;
+		display: block;
+		padding: 11px;
+		font-size: 17px;
+		font-family: helvetica;
+		font-weight: bold;		
+	}
+	.navbar a:hover {background:silver;
+		width: 179px;
+		transition: 0.6s;text-transform: uppercase; 
+	}
+	/*Les particule Js*/
 
-p img{ float: right;
-	   margin-top: -220px;
-	   width: 200px;
-}
+	#particles-js{
+		height: 60%;
+		background:rgb(175, 47, 47);
+		margin-top: 5px;
+		}
 
-.police{ font-size: 20px;
-line-height: 25px; }
+	/*Les medias Querries*/
+
+	@media screen and (max-width:780px){header{font-size: 20px;margin: 20px, 0px, 0px, 0px;
+	width: 100%;
+	}
+	.navbar li a{	font-size: 10px;
+		padding: 8px;
+	}
+	.navbar li:hover a{padding: 5px,10px,10px,10px;
+	}
+	/*Les medias Querries*/
+
+	@media screen and (max-width:780px){header{font-size: 20px;margin: 20px, 0px, 0px, 0px;
+	width: 100%;
+	}
+	.nav li a{	font-size: 10px;
+		padding: 8px;
+	}
+	.nav li:hover a{padding: 5px,10px,10px,10px;
+	}
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+	
+	
+	
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
