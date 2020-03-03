@@ -6,6 +6,12 @@ body{
     
 }
 
+/*background-color*/
+.menu-gauche,.présentation,.competences,.parcours,.Traveaux,.Contacts{
+  background-color: rgb(25, 69, 87);
+  border: 2px solid black;
+}
+
 /* Les particule Js*/
 #particles-js{
     height: 100%;
@@ -28,8 +34,6 @@ body{
 
 .menu-gauche{
     grid-row: 2/span7;
-    background-color: rgb(198, 197, 219);
-    border: 1px solid black;
 }
 
 .picture{
@@ -69,19 +73,16 @@ body{
     text-align: justify;
     padding: 15px;
     font-size: 19px;
-    font-family: 'Dancing Script', ;
+    color: white ;
 }
 
-.loisirs{
+.Traveaux{
     grid-column: 1/span2;
-    background-color: rgb(30, 43, 14);
 }
 
 
 .competences{
     grid-column: 1/span2;
-    background-color: rgb(67, 36, 68);
-   
 }
 
 .divcon{
@@ -200,19 +201,12 @@ margin-left: 390px;
     background-color: rgb(121, 72, 27);
 }
 
-.football{
-    background-color: yellow;
-}
 
-.musique{
-    background-color: gray;
-}
 
 
 /* Mon parcours*/
 .parcours{
     grid-column: 1/span2;
-    background-color: rgb(91, 93, 94);
     height: 500px;
 }
 
@@ -224,7 +218,7 @@ margin-left: 390px;
     font-size: 6em;
     display: flex;
     position: absolute;
-    top: 50px;
+    top: 120px;
     padding-left: 400px;
   }
   .text-anime span {
@@ -255,9 +249,9 @@ margin-left: 390px;
     0%,100% {
       color: #fff;
       filter: blur(2px);
-      text-shadow: 0 0 10px #00b3ff,
-                   0 0 20px #00b3ff,
-                   0 0 40px #00b3ff,
+      text-shadow: 0 0 10px #0fc94d,
+                   0 0 20px#0fc94d,
+                   0 0 40px#0fc94d,
                    0 0 80px #00b3ff,
                    0 0 120px #00b3ff,
                    0 0 200px #00b3ff,
@@ -277,7 +271,7 @@ margin-left: 390px;
 
 .content {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -409,11 +403,13 @@ margin-left: 390px;
 
   /*------------------------------------*/
 
+  /*Ligne verticale*/
+
 .timeline {
     position: relative;
     width: 660px;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 20px;
     padding: 1em 0;
     list-style-type: none;
   }
@@ -577,10 +573,14 @@ margin-left: 390px;
     line-height: 30px;
 }
 
-.mon-cv{
+.Contacts{
     grid-column: 1/span2;
-    background-color: rgb(182, 132, 167);
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
 }
+
 
 .pied-de-page{
     grid-column: 1/span2;
@@ -592,7 +592,8 @@ margin-left: 390px;
 
 nav li{
 	list-style: none;
-	float: left;
+  float: left;
+  margin-left: 55px;
 }
 nav ul{
 	margin: 0px;
@@ -600,17 +601,18 @@ nav ul{
 }
 nav{
 	width: 1270px;
-    background-color: #195858;
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
     height: 50px;
     position: absolute;
     position: fixed;
-    top: 0;
+    top: 10px;
 }
 
 nav a{
 	display: inline-block;
 	text-decoration: none; 
-	padding: 15px 50px; 
+	padding: 12px 50px; 
 	color:#FFF;
 	text-transform: uppercase;	
     font-size: 15px;
@@ -657,30 +659,19 @@ nav li:hover a{
     font-size: 20px;
     color: white;
     text-decoration: underline;
+    margin-top: 20px;
     
 }
 /*menu-gauche*/
 .réalisations{
     font-weight: bold;
     font-size: 17px;
+    color: white;
 }
-.right-menu li{
-    list-style: none;
-}
-
-.right-menu a{
-    font-size: 17px;
-    line-height: 50px;
-    text-decoration: none;
-    color: rgb(180, 23, 23);
-    padding: 3px;
-    display: block;
-    margin: 5px;
+.menu-gauche li{
+  color: white;
 }
 
-    .right-menu :hover{
-    background-color: rgb(30, 139, 143);    
-    }
 
 
 /*menu liens reseaux*/
@@ -691,15 +682,12 @@ nav li:hover a{
 
 .sociaux{
     text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+   
 }
 
-.image-cv{
-    margin-left: 300px;
-    width: 700px;
-}
-.telcv{
-    text-align: center;
-}
+
 .mes-contacts{
     text-align: center;
 }
@@ -707,8 +695,8 @@ nav li:hover a{
 .bas-de-page{
     text-align: center;
     color: white;
-    font-size: 15px;
-    font-weight: bolder;
+    font-size: 12px;
+    
 }
 
 /* Mes traveaux*/
@@ -737,12 +725,35 @@ figcaption {
   color: white;
   opacity: 0;
   transition: 1s;
-  transform: translateY(-50px) scale(2) rotate(-25deg);
-  
+  transform: translateY(-50px) scale(2) rotate(-25deg);  
 }
+
 figure:hover figcaption {
   opacity: 1;
   transform: translateY(0);
+}
+
+.form-cont{
+  border-left: 1px solid black;
+  padding-left: 150px;
+}
+
+#input-name,#input-email,#input-subject, #input-message{
+  padding: 3px;
+  margin: 5px;
+  width: 350px;
+}
+
+#input-message{
+  padding: 3px;
+  margin: 5px;
+  width: 350px;
+  height: 150px;
+}
+
+#input-submit{
+  padding: 3px;
+  margin: 5px;
 }
   
   /* ================ Timeline Media Queries ================ */
